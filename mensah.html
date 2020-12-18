@@ -24,7 +24,38 @@
 <p>A Grid Layout must have a parent element with the <em>display</em> property set to <em>grid</em> or <em>inline-grid</em>.</p>
 
 <p>Direct child element(s) of the grid container automatically becomes grid items.</p>
-<p>You can smell hairy monkey chunks.</p>
+<p>
+import { Observable, of } from 'rxjs'; 
+import { map } from 'rxjs/operators';
+
+const ob = {
+  next:apple=>
+  console.log(`${apple}`),
+  err:err =>
+  console.log(`${err}`),
+  complete:() =>
+  console.log('go home...'),
+}
+
+const gStream = new Observable(a => {
+  a.next('a1');
+  a.next('a2');
+  a.complete();
+})
+
+const sub = gStream.subscribe(ob);
+
+var out = document.getElementById("boner").innerHTML="This is my subscription: " + `${gStream[0]}`
+
+
+
+<h1>RxJS playground</h1>
+
+<p>Open the console below to see results</p>
+
+<h2 id="boner">Output</h2>
+
+</p>
 
 <div class="grid-container">
   <div class="grid-item">1Very Cool Move!</div>
