@@ -2,9 +2,37 @@
 <html>
    <head>
       <title>What a BumBum!</title>
+      <link rel="stylesheet" type="text/css" href="styles.css">
       <style> .grid-container { display: grid; grid-template-columns: auto auto auto; background-color: #2196F3; padding: 10px; } .grid-item { background-color: rgba(255, 255, 255, 0.8); border: 1px solid rgba(0, 0, 0, 0.8); padding: 20px; font-size: 30px; text-align: center; } </style>
    </head>
    <body>
+<!--BEGIN NAV -->
+  <div class="dropdown">
+  <button class="dropbtn">
+<img src="https://firebasestorage.googleapis.com/v0/b/presidents-29d5c.appspot.com/o/uploads%2FlogoTeeth.png?alt=media&token=ae98faa2-4d91-4b1c-8e61-97cb09f57684" alt="logo" width="32" height="32">
+  </button>
+  <div class="dropdown-content">
+    <a href="https://mensahgit.github.io/">MDE</a>
+    <a href="https://mensahgit.github.io/loudhouse/nav.html">NAV</a>
+    <a href="https://mensahgit.github.io/loudhouse/mytable.html">TABLE</a>
+  </div>
+</div>
+<div>
+  <ul>
+  <li><a class="active" href="index.html">Home</a></li>
+  <li><a href="art.html">Art</a></li>
+  <li><a href="writings.html">Writings</a></li>
+  <li><a href="ideas.html">Ideas</a></li>
+  <li><a href="music.html">Music</a></li>
+  <li style="float:right"><a href="bio.html">Bio</a></li>
+</ul>
+</div>
+
+<!-- END NAV -->
+
+
+
+
       <h1>Grid Elements(The name's Bone. James Bone!)</h1>
       <p>A Grid Layout must have a parent element with the <em>display</em> property set to <em>grid</em> or <em>inline-grid</em>.</p>
       <p>Direct child element(s) of the grid container automatically becomes grid items.</p>
@@ -26,8 +54,14 @@
          })
          const sub = gStream.subscribe(ob);
          var out = document.getElementById("boner").innerHTML="This is my subscription: " + `${gStream[0]}`
-         <a href="https://mensahgit.github.io/loudhouse/mytable.html">
-      <h1>RxJS playground</h1>
+         <a href="https://mensahgit.github.io/">
+      <h1>MDE</h1>
+      </a>
+      <a href="https://mensahgit.github.io/loudhouse/nav.html">
+      <h1>NAV</h1>
+      </a>
+      <a href="https://mensahgit.github.io/loudhouse/mytable.html">
+      <h1>TABLE</h1>
       </a>
       <p>Open the console below to see results</p>
       <h2 id="boner">Output</h2>
